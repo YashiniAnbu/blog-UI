@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import Navbar from "./Navbar"
+import Navbar from "./NavBar.jsx"
 
 const Header = ({ showNavbar = true }) => {
   const [isOpen, setIsOpen] = useState(false)
