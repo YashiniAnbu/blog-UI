@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react"
 import Navbar from "./NavBar.jsx"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
 
 const Header = ({ showNavbar = true }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,8 +20,8 @@ const Header = ({ showNavbar = true }) => {
           <span className="logo">Logo</span>
           <span className="blog">Blog</span>
           <div className="search">
-            <span className="search-icon">🔍</span>
             <input type="text" placeholder="What do you want to read?" />
+            <FontAwesomeIcon icon={faMagnifyingGlass}/>
           </div>
         </div>
 
